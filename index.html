@@ -32,6 +32,10 @@
     .font-manrope {
       font-family: 'Manrope', sans-serif;
     }
+
+    .custom-text-color {
+      color: #FF8938;
+    }
   </style>
 </head>
 
@@ -145,28 +149,113 @@
     <!-- super clients section -->
     <section
       class="my-24 flex flex-col lg:flex-row gap-12 rounded-xl bg-gradient-to-r from-[#FF8938] to-[#F00] px-16 py-24">
-      <div class="space-y-5">
-        <h2 class="text-5xl font-extrabold text-white">
-          Meet Our Super <br>
-          Clients
-        </h2>
-        <p class="text-white">
-          There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in
-          some form, by injected humour, or randomised words which don't look even slightly believable.
-        </p>
-        <button class="btn">Show All</button>
-      </div>
 
-      <div>
-        <!-- review -->
-        <div class="relative p-10 rounded-lg bg-white">
-          <img class="absolute -left-5 -top-5 bg-white p-1 rounded-full" src="./images/client.png" alt="">
+      <div class="flex items-center lg:pr-36">
+        <div class="space-y-5">
+          <h2 class="text-5xl font-extrabold text-white">
+            Meet Our Super <br>
+            Clients
+          </h2>
+          <p class="text-white">
+            There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in
+            some form, by injected humour, or randomised words which don't look even slightly believable.
+          </p>
+          <button class="btn custom-text-color">Show All</button>
+        </div>
+      </div>
+      <!-- review container -->
+      <div class="relative">
+        <!-- next-review -->
+        <div class="lg:w-[300px] relative mb-16 opacity-40 p-8 z-10 rounded-lg bg-white">
+          <img class="absolute -left-5 -top-8 bg-white border-4 border-white rounded-full" src="./images/client.png"
+            alt="">
           <p>
             We are providing the best and suitable home insurance services for the people who are interested to
             treatment
           </p>
           <h4 class="font-bold mt-5">Ilham Yuda</h4>
           <p class="font-medium">Businessman</p>
+          <div class="flex justify-end -mt-5">
+            <img src="./images/circles.png" alt="">
+          </div>
+        </div>
+        <!-- current-review -->
+        <div class="lg:w-[300px] absolute top-40 lg:-left-40 p-8 z-20 rounded-lg bg-white">
+          <img class="absolute -left-5 -top-8 bg-white border-4 border-white rounded-full" src="./images/client.png"
+            alt="">
+          <p>
+            We are providing the best and suitable home insurance services for the people who are interested to
+            treatment
+          </p>
+          <h4 class="font-bold mt-5">Ilham Yuda</h4>
+          <p class="font-medium">Businessman</p>
+          <div class="flex justify-end -mt-5">
+            <img src="./images/circles.png" alt="">
+          </div>
+        </div>
+        <!-- previous-review -->
+        <div class="lg:w-[300px] relative opacity-40 p-8 z-10 rounded-lg bg-white">
+          <img class="absolute -left-5 -top-8 bg-white border-4 border-white rounded-full" src="./images/client.png"
+            alt="">
+          <p>
+            We are providing the best and suitable home insurance services for the people who are interested to
+            treatment
+          </p>
+          <h4 class="font-bold mt-5">Ilham Yuda</h4>
+          <p class="font-medium">Businessman</p>
+          <div class="flex justify-end -mt-5">
+            <img src="./images/circles.png" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- news & events section -->
+    <section class="text-center my-24">
+      <h2 class="text-5xl font-extrabold mb-5">News & Events</h2>
+      <p class="lg:max-w-3xl mx-auto mb-10">
+        There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in
+        some form, by injected humour, or randomised words which don't look even slightly believable.
+      </p>
+      <!-- news cards container -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- card 1 -->
+        <div class="card gap-6 border-2">
+          <figure class="px-6 pt-6">
+            <img src="/images/news-1.png" alt="Shoes" class="rounded-xl" />
+          </figure>
+          <div class="card-body">
+            <p class="text-left text-sm text-[#777]">Feb 05, 2027</p>
+            <h2 class="card-title text-left">Collecting 8 points for <br>
+              discount</h2>
+            <p class="text-left text-[#777]">There are many variations of passages of Lorem Ipsum available.</p>
+            <p class="text-left font-bold">Learn More</p>
+          </div>
+        </div>
+        <!-- card 2 -->
+        <div class="card gap-6 border-2">
+          <figure class="px-6 pt-6">
+            <img src="/images/news-2.png" alt="Shoes" class="rounded-xl" />
+          </figure>
+          <div class="card-body">
+            <p class="text-left text-sm text-[#777]">Feb 05, 2027</p>
+            <h2 class="card-title text-left">Collecting 8 points for <br>
+              discount</h2>
+            <p class="text-left text-[#777]">There are many variations of passages of Lorem Ipsum available.</p>
+            <p class="text-left font-bold">Learn More</p>
+          </div>
+        </div>
+        <!-- card 3 -->
+        <div class="card gap-6 border-2">
+          <figure class="px-6 pt-6">
+            <img src="/images/news-3.png" alt="Shoes" class="rounded-xl" />
+          </figure>
+          <div class="card-body">
+            <p class="text-left text-sm text-[#777]">Feb 05, 2027</p>
+            <h2 class="card-title text-left">Collecting 8 points for <br>
+              discount</h2>
+            <p class="text-left text-[#777]">There are many variations of passages of Lorem Ipsum available.</p>
+            <p class="text-left font-bold">Learn More</p>
+          </div>
         </div>
       </div>
     </section>
