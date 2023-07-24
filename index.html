@@ -22,7 +22,8 @@
       theme: {
         extend: {
           colors: {
-            clifford: '#da373d',
+            'gradient-start': '#FF8938',
+            'gradient-end': '#F00',
           }
         }
       }
@@ -36,15 +37,19 @@
     .custom-text-color {
       color: #FF8938;
     }
+
+    .footer-gradient {
+      background-image: linear-gradient(270deg, rgba(255, 0, 0, 0.10) 0%, rgba(255, 137, 56, 0.10) 100%);
+    }
   </style>
 </head>
 
 <body class="font-manrope">
   <!-- header section -->
-  <header class="container mx-auto">
+  <header class="container lg:max-w-screen-xl mx-auto">
     <!-- hero section -->
-    <div class="hero">
-      <div class="hero-content flex-col lg:flex-row">
+    <div class="my-16">
+      <div class="flex flex-col lg:flex-row justify-between">
         <div>
           <h1 class="text-7xl font-extrabold">
             It's good <br>
@@ -56,9 +61,9 @@
           </button>
         </div>
         <div>
-          <img src="/images/banner.png" class="max-w-sm" />
+          <img src="/images/banner.png" class="" />
           <!-- rating badge -->
-          <div class="-mt-16 flex items-center gap-4 p-5 w-60 rounded-md bg-white drop-shadow-lg">
+          <div class="-mt-32 flex items-center gap-4 p-5 w-[350px] rounded-md bg-white drop-shadow-lg">
             <!-- <i class="fa-solid fa-star text-3xl text-amber-400"></i> -->
             <img class="w-12" src="./images/star.png" alt="">
             <div>
@@ -71,7 +76,7 @@
     </div>
   </header>
 
-  <main class="container lg:max-w-screen-lg mx-auto">
+  <main class="container lg:max-w-screen-xl mx-auto">
     <!-- featured section -->
     <section class="text-center my-24">
       <h2 class="text-5xl font-extrabold mb-5">Our Featured Products</h2>
@@ -148,7 +153,7 @@
     </section>
     <!-- super clients section -->
     <section
-      class="my-24 flex flex-col lg:flex-row gap-12 rounded-xl bg-gradient-to-r from-[#FF8938] to-[#F00] px-16 py-24">
+      class="my-24 flex flex-col lg:flex-row gap-12 rounded-xl bg-gradient-to-r from-gradient-start to-gradient-end px-16 py-24">
 
       <div class="flex items-center lg:pr-36">
         <div class="space-y-5">
@@ -259,10 +264,59 @@
         </div>
       </div>
     </section>
-
   </main>
-  <footer>
 
+  <footer class="p-10 bg-base-200 text-base-content footer-gradient">
+    <div class="container lg:max-w-screen-xl mx-auto">
+      <div class="flex justify-between my-20">
+        <img src="./images/cup.png" alt="">
+        <p>
+          <span>Ready to get strated?</span>
+          <button class="btn bg-gradient-to-r from-gradient-start to-gradient-end text-white border-none">Get
+            Started</button>
+        </p>
+      </div>
+      <div class="footer">
+        <div>
+          <span class="footer-title">Services</span>
+          <a class="link link-hover">Branding</a>
+          <a class="link link-hover">Design</a>
+          <a class="link link-hover">Marketing</a>
+          <a class="link link-hover">Advertisement</a>
+        </div>
+        <div>
+          <span class="footer-title">Company</span>
+          <a class="link link-hover">About us</a>
+          <a class="link link-hover">Contact</a>
+          <a class="link link-hover">Jobs</a>
+          <a class="link link-hover">Press kit</a>
+        </div>
+        <div>
+          <span class="footer-title">Legal</span>
+          <a class="link link-hover">Terms of use</a>
+          <a class="link link-hover">Privacy policy</a>
+          <a class="link link-hover">Cookie policy</a>
+        </div>
+        <div>
+          <span class="footer-title">Newsletter</span>
+          <div class="form-control w-80">
+            <label class="label">
+              <span class="label-text">Enter your email address</span>
+            </label>
+            <div class="relative">
+              <input type="text" placeholder="username@site.com" class="py-3 bg-transparent border-b border-black/50" />
+              <button
+                class="btn bg-gradient-to-r from-gradient-start to-gradient-end absolute top-0 right-0 rounded-full text-white border-none">
+                <i class="fa-solid fa-chevron-right"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="text-center p-4 mt-4">
+        <p>Copyright © 2023 - All right reserved by ACME Industries Ltd</p>
+      </div>
+    </div>
   </footer>
 </body>
 
